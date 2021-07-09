@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Rezerwacja – Domek Szawnica Niterbarg 5</title>
+
+	<!-- Meta Data -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="address=no"/>
+    <meta name="author" content="Niterbarg 5 - Domek w Szczawnicy na wynajem" />
+    <meta name="description" content="Niterbarg 5 — Całoroczny domek na wynajem w Szczawnicy" />
+
+    <!-- Twitter data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@niterbarg5">
+    <meta name="twitter:title" content="Domek Szczawnica - Niterbarg 5">
+    <meta name="twitter:description" content="Niterbarg 5 — Całoroczny domek na wynajem w Szczawnicy">
+    <meta name="twitter:image" content="assets/images/social.jpg">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Domek na wynajem w Szczawnicy - Niterbarg 5 "/>
+    <meta property="og:type" content="Niterbarg 5" />
+    <meta property="og:url" content="www.niterbarg5.pl" />
+    <meta property="og:image" content="assets/images/social.jpg" />
+    <meta property="og:description" content="Niterbarg 5 — Całoroczny domek na wynajem w Szczawnicy" />
+    <meta property="og:site_name" content="Domek Szczawnica - Niterbarg 5" />
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-touch-icon-57x57.png">
+	<link rel="shortcut icon" href="assets/images/favicons/favicon.png" type="image/png">
+
+    <!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="assets/styles/style.css"/>
+	
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+	    <div class="preloader__wrap">
+		    <div class="preloader__progress"><span></span></div>
+		</div>
+	</div>
+    
+	<!-- Content -->
+	<main class="main reservation-page">
+        <div class="reservation-page__left">
+		    <div class="reservation-page__wrap">
+		        <h2 class="title title--h2 text-center">Rezerwacja</h2>
+			    <p class="paragraph text-center">Zarezerwuj domek już teraz i rozpocznij niesamowitą przygodę pełną odkryć i doświadczeń w Pieninach. </p>
+				<div class="row">
+				    <div class="col-12">
+					    <div id="validator-contact" class="hidden"></div>
+				    </div>
+				</div>
+			    <form id="booking-form" class="row mt-2 mt-sm-4">
+			        <div class="col-12">
+				        <div class="form-group">
+				            <label class="label" for="name">Twoje imię</label>
+                            <div class="position-relative">
+							    <input type="text" class="inputText inputText__icon" id="name" name="name" placeholder="Wpisz swoje imię" required="required" autocomplete="on">
+					            <span class="input-icon icon-user"></span>
+							</div>
+					    </div>
+				        <div class="form-group">
+				            <label class="label" for="email">Twój e-mail</label>
+                            <div class="position-relative">
+							    <input type="email" class="inputText inputText__icon" id="email" name="email" placeholder="Wpisz swój e-mail" required="required" autocomplete="on">
+					            <span class="input-icon icon-mail"></span>
+							</div>	
+					    </div>
+				        <div class="form-group">
+				            <label class="label" for="phone">Telefon</label>
+							<div class="position-relative">
+                                <input type="tel" class="inputText inputText__icon" id="phone" name="phone" placeholder="Numer telefonu" required="required" autocomplete="on">
+					            <span class="input-icon icon-phone"></span>
+							</div>
+					    </div>
+				    </div>
+			        <div class="col-12 col-sm-6">
+				        <div class="form-group">
+				            <label class="label" for="check-in">Data przyjazdu</label>
+							<div class="position-relative">
+                                <input type="text" class="inputText inputText__icon readonly js-datepicker" id="check-in" name="check-in" placeholder="Wybierz datę" required="required" autocomplete="on">
+					            <span class="input-icon icon-calendar"></span>
+							</div>
+					    </div>
+				    </div>
+			        <div class="col-12 col-sm-6">
+				        <div class="form-group">
+				            <label class="label" for="check-out">Data wyjazdu</label>
+							<div class="position-relative">
+                                <input type="text" class="inputText inputText__icon readonly js-datepicker" id="check-out" name="check-out" placeholder="Wybierz datę" required="required" autocomplete="on">
+					            <span class="input-icon icon-calendar"></span>
+							</div>
+					    </div>
+				    </div>
+			        <div class="col-12 col-sm-6">
+				        <div class="form-group">
+				            <label class="label" for="person-adult">Dorosłych</label>
+						    <div class="js-quantity">
+							    <span class="qty-minus icon-minus"></span>
+                                <input type="number" class="inputText js-quantity-input" id="person-adult" name="person-adult" value="1" min="1" max="6" data-citizen="" required="required" autocomplete="on">
+					            <span class="qty-plus icon-plus"></span>
+						    </div>
+					    </div>
+				    </div>
+			        <div class="col-12 col-sm-6">
+				        <div class="form-group">
+				            <label class="label" for="person-kids">Dzieci</label>
+						    <div class="js-quantity">
+							    <span class="qty-minus icon-minus"></span>
+                                <input type="number" class="inputText js-quantity-input" id="person-kids" name="person-kids" value="0" min="0" max="6" autocomplete="on">
+					            <span class="qty-plus icon-plus"></span>
+						    </div>
+					    </div>
+				    </div>
+					<div class="col-12 col-sm-6 mt-2 mt-sm-3 order-2 order-sm-1">
+				        <a href="index.html" class="btn btn__medium btn__second w-100">Anuluj</a>
+				    </div>
+				    <div class="col-12 col-sm-6 mt-2 mt-sm-3 order-1 order-sm-2">
+				        <button type="submit" class="btn btn__medium w-100">Rezerwuj</button>
+				    </div>
+			    </form>
+			</div>
+		</div>
+		<div class="reservation-page__right js-image" data-image="assets/images/apartamenty_szczawnica_gory.jpg"></div>
+	</main>
+	<!-- /Content -->
+
+
+
+    <!-- Messenger Wtyczka czatu Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Wtyczka czatu code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "101607982195962");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    
+	<!-- JavaScripts -->
+	<script src="assets/js/jquery-3.4.1.min.js"></script>
+	<script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/common.js"></script>
+</body>
+</html>

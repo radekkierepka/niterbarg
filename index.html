@@ -1,0 +1,555 @@
+ <!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Domek Szczawnica – Niterbarg 5</title>
+
+	<!-- Meta Data -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="address=no"/>
+    <meta name="author" content="Dom na wynajem Szczawnica" />
+    <meta name="description" content="Niterbarg 5 — Całoroczny domek na wynajem w Szczawnicy" />
+
+    <!-- Twitter data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@niterbarg5">
+    <meta name="twitter:title" content="Niterbarg5">
+    <meta name="twitter:description" content="Niterbarg 5 — Całoroczny domek na wynajem w Szczawnicy">
+    <meta name="twitter:image" content="assets/images/social.jpg">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Domek na wynajem w Szczawnicy - Niterbarg 5 "/>
+    <meta property="og:type" content="Niterbarg 5" />
+    <meta property="og:url" content="http://www.niterbarg5.pl" />
+    <meta property="og:image" content="assets/images/social.jpg" />
+    <meta property="og:description" content="Niterbarg5 — Majestatyczny domek na wynajem w Szczawnicy" />
+    <meta property="og:site_name" content="Niterbarg5" />
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-touch-icon-57x57.png">
+	<link rel="shortcut icon" href="assets/images/favicons/favicon.png" type="image/png">
+
+    <!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="assets/styles/style.css"/>
+
+    <!-- Mapbox-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+	
+
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+	    <div class="preloader__wrap">
+		    <div class="preloader__progress"><span></span></div>
+		</div>
+	</div>
+
+    <!-- Header -->
+	<header class="header">
+	    <nav class="navbar navbar-white navbar-overlay">
+            <a class="logo-link" href="index.html">
+                <img class="logotype" src="assets/images/ui/logo-white.svg" alt="Domek na wynajem w Szczawnicy">
+		    </a>
+		    <div class="navbar__menu">
+		        <button class="hamburger" type="button">
+				    <span></span>
+					<span></span>
+				</button>
+			    <ul class="nav">
+				    <li class="nav__item is-current"><a class="nav__link" href="index.html"><span data-hover="Strona główna">Strona główna</span></a></li>
+				    <li class="nav__item"><a class="nav__link" href="dom_szczawnica.html"><span data-hover="Oferta">Oferta</span></a></li>
+				    <li class="nav__item"><a class="nav__link" href="galeria.html"><span data-hover="Galeria">Galeria</span></a></li>
+				    <li class="nav__item"><a class="nav__link" href="o-nas.html"><span data-hover="O nas">O nas</span></a></li>
+				    <li class="nav__item"><a class="nav__link" href="atrakcje.html"><span data-hover="Atrakcje">Atrakcje</span></a></li>
+				    <li class="nav__item"><a class="nav__link" href="kontakt.html"><span data-hover="Kontakt">Kontakt</span></a></li>
+					<li class="nav__item"><a class="btn btn__medium" href=""><i class="btn-icon-left icon-bookmark"></i>Rezerwacja</a></li>
+			    </ul>
+	        </div>
+		    <div class="navbar__btn">
+		        <a class="btn btn__medium" href="rezerwacja.html"><i class="btn-icon-left icon-bookmark"></i>Rezerwacja</a>
+		    </div>	
+	    </nav>
+	</header>
+	<!-- /Header -->
+    
+	<!-- Content -->
+	<main class="main">
+        <!-- Intro -->
+		<section class="intro">
+		    <div class="intro__bg-wrap">
+		        <div class="overlay intro__bg js-image js-parallax" data-image="assets/images/domek_na_wynajem_szczawnica.jpg"></div>
+			</div>
+	        <div class="container intro__container">
+		        <div class="row h-100 align-items-center">
+			        <div class="col-12 col-md-12 col-xl-8">
+				        <span class="title title--overhead text-white js-lines">Miejsce z klimatem
+</span>
+		                <h1 class="title title--display-1 js-lines">Domek na wynajem w Szczawnicy
+</h1>
+					    <button class="intro__btn-play js-lines" id="play">Zobacz<span class="btn-play btn-play__popup"></span></button>
+				    </div>
+                </div>				
+		    </div>
+		    <!-- Scroll To -->
+		    <a class="scroll-to" href="!#about">Przewiń<span class="scroll-to__line"></span></a>
+	    </section>
+	    <!-- /Intro -->
+	
+		<!-- Booking -->
+		<div class="bottom-panel booking-panel">
+		    <form action="rezerwacja.html" method="GET" class="bottom-panel__wrap d-flex">
+			    <div class="row bottom-panel__form-wrap">
+			        <div class="form-group col-date-to col-12 col-sm-6 col-md-4 slash">
+				        <label class="labelFeature" for="check-in">Data przyjazdu</label>
+                        <input type="text" class="inputFeature input-arrow readonly js-datepicker" id="check-in" name="check-in" placeholder="Wybierz datę" required="required" autocomplete="off">
+				    </div>
+				    <div class="form-group col-date-from col-12 col-sm-6 col-md-4 slash">
+				        <label class="labelFeature" for="check-out">Data wyjazdu</label>
+                        <input type="text" class="inputFeature input-arrow readonly js-datepicker" id="check-out" name="check-out" placeholder="Wybierz datę" required="required" autocomplete="off">
+				    </div>
+				    <div class="form-group col-12 col-md-4 dropdown">
+					    <div class="closeDropdown" id="dropdownPersonsAction" data-toggle="dropdown" data-display="static">
+				            <label class="labelFeature" for="person-total">Ilość osób</label>
+                            <input type="text" class="inputFeature input-arrow readonly" id="person-total" name="person" placeholder="Wybierz ilość" required="required" autocomplete="off">
+						</div>
+						
+						<!-- Dropdown person -->
+						<div class="dropdown-menu dropdown-menu-lg-left dropdown-menu-right" id="dropdownPersons" aria-labelledby="dropdownPersonsAction">
+						    <div class="row">
+						        <div class="form-group col-6 col__left">
+							        <label class="label" for="person-adult">Dorośli</label>
+						            <div class="js-quantity">
+									    <span class="qty-minus icon-minus"></span>
+									    <input type="number" class="inputText js-quantity-input" id="person-adult" name="person-adalt" value="0" min="1" max="6" readonly="readonly">
+										<span class="qty-plus icon-plus"></span>
+									</div>	
+							    </div>
+							    <div class="form-group col-6 col__right">
+							        <label class="label" for="person-kids">Dzieci</label>
+									<div class="js-quantity">
+									    <span class="qty-minus icon-minus"></span>
+							            <input type="number" class="inputText js-quantity-input" id="person-kids" name="person-kids" value="0" min="0" max="6" readonly="readonly">
+										<span class="qty-plus icon-plus"></span>
+									</div>
+							    </div>
+							</div>
+							<div class="row row-footer">
+							    <div class="col-6 col__left">
+							        <button type="button" class="btn btn__small btn__second btn-reset-persons w-100">Usuń</button>
+								</div>
+							    <div class="col-6 col__right">
+							        <button type="button" class="btn btn__small btn-close-dropdown w-100">Zastosuj</button>
+								</div>
+							</div>	
+						</div>
+						<!-- /Dropdown person -->
+				    </div>
+				</div>
+		        <button type="submit" class="btn-booking"><span>Dalej</span>Zarezerwuj</button>
+			</form>
+		</div>	
+	    <!-- /Booking -->
+
+	    <!-- Section About Us -->
+	    <section id="about" class="container section">
+	        <div class="row">
+		        <div class="col-12 col-md-12 col-lg-8">
+			        <span class="title title--overhead js-lines">Miejsce z klimatem
+</span>
+			        <h1 class="title title--h1 js-lines"><span class="text-accent">Nieterbag 5</span> to azyl dla spragnionych ciszy!
+
+</h1>
+			    </div>
+				<div class="col-12 col-lg-6 text-left text-sm-justify">
+				    <p class="mr-0 mr-lg-4 paragraph js-scroll-show">Wyobraź sobie taką scenę. Budzisz się rano, parzysz swoją ulubioną kawę i z kubkiem w ręku
+wychodzisz na taras, a tam... rozkoszujesz się pięknym widokiem. Z jednej strony koń pasie się
+na grani, niedaleko samotne drzewo mieni się w promieniach słońca, </p>
+				</div>
+				<div class="col-12 col-lg-6 text-left text-sm-justify">
+					<p class="ml-0 ml-lg-4 paragraph js-scroll-show">trochę dalej baca zagania
+setki owiec do zagrody, a w dali góry, góry i jeszcze raz góry. Boski widok, nic nie zakłóca ciszy i
+spokoju… brzmi niemożliwie? A jednak :)</p>
+				</div>
+				
+				<div class="col-12 col-lg-6">
+				    <figure class="about-image-wrap mr-0 mr-lg-4">
+				        <a class="about-link" href="o-nas.html">Zobacz więcej <i class="icon-arrow-special"></i></a>
+				        <img class="cover about-image-portrait" src="assets/images/domki_w_szczawnicy.jpg" alt="Noclegi w Szczawnicy" />
+					</figure>	
+				</div>
+				<div class="col-12 col-lg-6">
+				    <figure class="about-image-wrap ml-0 ml-lg-4">
+					    <img class="cover about-image-landscape" src="assets/images/tani_domek_do_wynajecia_w_szczawnicy2.jpg" alt="Domki w Szczawnicy wynajem" />
+					</figure>
+				</div>
+		    </div>
+		</section>
+		
+		<!-- Section Rooms -->
+		<section class="container section">	
+	        <div class="row align-items-end">
+		        <div class="col-12 col-md-12 col-lg-8">
+			        <span class="title title--overhead js-lines">Magiczny klimat</span>
+			        <h1 class="title title--h1 js-lines">Pokoje.</h1>
+			    </div>
+				<div class="col-12 col-md-12 col-lg-4 text-lg-right d-none d-md-block">
+				    <a class="btn-link header-btn-more" href="dom_szczawnica.html">Zobacz ofertę</a>
+				</div>
+			</div>
+			
+			<!-- Grid -->
+			<div class="row">
+				<div class="col-12 col-md-12 col-lg-8">
+				    <!-- ItemRoom -->
+				    <div class="itemRoom">
+					    <span class="badge">Parter</span>
+					    <figure class="itemRoom__img-wrap">
+						    <a class="itemRoom__link" href="dom_szczawnica.html">
+							    <img class="cover" src="assets/images/dom_w_gorach_pokoje_szczawnica_wynajem_niterbarg5_002.jpg" alt="Dom z kuchnią na wynajem Szczawnica" />
+							</a>
+						</figure>
+						<div class="itemRoom__details">
+						    <h4 class="title title--h4">Salon</h4>
+							<div class="itemRoom__price">.<span>Salon z kuchnią</span></div>
+						</div>	
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+				    <!-- ItemRoom -->
+				    <div class="itemRoom">
+				    	<span class="badge">Piętro</span>
+					    <figure class="itemRoom__img-wrap">
+						    <a class="itemRoom__link" href="dom_szczawnica.html">
+							    <img class="cover" src="assets/images/dom_w_gorach_pokoje_szczawnica_wynajem_niterbarg5_006.jpg" alt="Pokoje Szczawnica" />
+							</a>
+						</figure>
+						<div class="itemRoom__details">
+						    <h4 class="title title--h4">Sypialnia z balkonem</h4>
+							<div class="itemRoom__price">.<span>Łóżko 2 osobowe</span></div>
+						</div>
+					</div>	
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+				    <!-- ItemRoom -->
+				    <div class="itemRoom">
+				    	<span class="badge">Piętro</span>
+					    <figure class="itemRoom__img-wrap">
+						    <a class="itemRoom__link" href="dom_szczawnica.html">
+							    <img class="cover" src="assets/images/dom_w_gorach_pokoje_szczawnica_wynajem_niterbarg5_008.jpg" alt="Domek całoroczny w Szczawnicy - Wynajem" />
+							</a>
+						</figure>
+						<div class="itemRoom__details">
+						    <h4 class="title title--h4">Sypialnia</h4>
+							<div class="itemRoom__price">.<span>Łóżko 2 osobowe</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+				    <!-- ItemRoom -->
+				    <div class="itemRoom">
+				    	<span class="badge">z zewnątrz</span>
+					    <figure class="itemRoom__img-wrap">
+						    <a class="itemRoom__link" href="dom_szczawnica.html">
+							    <img class="cover" src="assets/images/zewnatrz/zewnatrz_dom_szczawnica_wynajem_niterbarg5_01.jpg" alt="Chatka do wynajęcia w Szczawnicy" />
+							</a>
+						</figure>
+						<div class="itemRoom__details">
+						    <h4 class="title title--h4">Dom </h4>
+							<div class="itemRoom__price">.<span>Niterbarg <sup>5</sup></span></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+				    <!-- ItemRoom -->
+				    <div class="itemRoom">
+				    	<span class="badge">z zewnątrz</span>
+					    <figure class="itemRoom__img-wrap">
+						    <a class="itemRoom__link" href="dom_szczawnica.html">
+							    <img class="cover" src="assets/images/zewnatrz/zewnatrz_dom_szczawnica_wynajem_niterbarg5_058.jpg" alt="Chatka do wynajęcia w Szczawnicy" />
+							</a>
+						</figure>
+						<div class="itemRoom__details">
+						    <h4 class="title title--h4">Dom </h4>
+							<div class="itemRoom__price">.<span>Niterbarg <sup>5</sup></span></div>
+						</div>
+					</div>
+            </div>			
+	    </section>
+		
+		<!-- Section Achievements
+		<section class="container section">	
+	        <div class="row">
+		        <div class="col-12 col-lg-7">
+                    <h2 class="title-description js-lines">We strive to be the best in our field to make you even more comfortable.</h2>
+                </div>
+            </div>
+			
+			<div class="row">
+ 			    <div class="col-6 col-md-3 col__left">
+				    <div class="ach-box">
+				        <span class="title title--overhead js-lines">Spa offers</span>
+				        <div class="item-count"><span>32</span>+</div>
+					</div>
+				</div>
+				
+ 			    <div class="col-6 col-md-3 col__right">
+				    <div class="ach-box">
+				        <span class="title title--overhead js-lines">Rooms</span>
+				        <div class="item-count"><span>24</span>+</div>
+					</div>
+				</div>
+				
+ 			    <div class="col-6 col-md-3 col__left">
+				    <div class="ach-box">
+				        <span class="title title--overhead js-lines">Beaches</span>
+				        <div class="item-count"><span>3</span>+</div>
+					</div>
+				</div>
+				
+ 			    <div class="col-6 col-md-3 col__right">
+				    <div class="ach-box">
+				        <span class="title title--overhead js-lines">Happy clients</span>
+				        <div class="item-count"><span>10</span>k</div>
+					</div>
+				</div>
+			</div>
+        </section> -->
+
+		<!-- Section Testimonials -->
+		<section class="section section-testimonials section-gray section-gray--cutoutTop">
+		    <div class="container">
+			    <div class="row">
+				    <div class="col-12">
+			            <span class="title title--overhead js-lines">Opinie</span>
+			            <h1 class="title title--h1 js-lines">Co klienci <br><span class="text-accent">mówią o nas.</span></h1>
+			        </div>
+					
+					<div class="col-12">
+					    <!-- Carousel -->
+					    <div class="swiper-container js-testimonials mb-5">
+						    <div class="swiper-wrapper">
+							    <!-- Testimonials item -->
+                                <div class="testimonials-item swiper-slide">
+								    <h4 class="title title--h4">Piękne widoki.</h4>
+									<p class="testimonials-item__caption">— Na pewno tu jeszcze wrócimy! Idealna lokalizacja dla osób szukających czegoś z dala od zgiełku. Bardzo mili i pomocni właściciele, dużym udogodnieniem jest kuchnia w pełni wyposażona, ogólnie miło i przyjemnie. Domki ładne, czyste, funkcjonalne, wykończone z dużą dbałością o szczegóły.</p>
+								    <div class="author-wrap">
+									    <div class="author-picture"><img class="cover" src="assets/images/tomek-domki-szczawnica.jpg" alt="Tanie domki w Szczawnicy" /></div>
+										<div>
+										    
+										    <div class="author-country">Tomek </div>
+										</div>
+									</div>
+								</div>
+							    <!-- Testimonials item -->
+                                <div class="testimonials-item swiper-slide">
+								    <h4 class="title title--h4">Świetne miejsce.</h4>
+									<p class="testimonials-item__caption">— Dojazd autem bez napędu 4x4 nie wchodzi w rachubę. Samochód można zostawić na parkingu prywatnym i przejechać ostatni kilometrowy odcinek samochodem terenowym właściciela. </p>
+								    <div class="author-wrap">
+									    <div class="author-picture"><img class="cover" src="assets/images/beata_domki_w_szczawnicy.jpg" alt="Domki Szczawnica" /></div>
+										<div>
+										    <div class="author-country">Beata</div>
+										</div>
+									</div>
+								</div>
+
+  <!-- Testimonials item -->
+                                <div class="testimonials-item swiper-slide">
+								    <h4 class="title title--h4">Magiczny klimat!</h4>
+									<p class="testimonials-item__caption">— Piękne miejsce, można zapomnieć o szarej codzienności i te widoki...🧡 do tego wszystkiego fantastyczni właściciele 🙂 nic tylko rzucić wszystko i jechać do Szczawnicy😍
+
+
+</p>
+								    <div class="author-wrap">
+									    <div class="author-picture"><img class="cover" src="assets/images/sabina_domy_w_szczawnicy_wynajem.jpg" alt="Domy w Szczawnicy do wynajęcia" /></div>
+										<div>
+										    <div class="author-country">Sabina</div>
+										</div>
+									</div>
+								</div>
+								
+							    <!-- Testimonials item -->
+                                <div class="testimonials-item swiper-slide">
+								    <h4 class="title title--h4">Wyjątkowy.</h4>
+									<p class="testimonials-item__caption">— Gospodarze to niezwykle gościnni ludzie, domek wspaniały - nawet na kilka dni. Bardzo czysto, łóżko wygodne, w pełni wyposażony aneks kuchenny i łazienka.
+Duży ogród, wiata z paleniskiem i wędzarnią, nie mogę się doczekać aż nadarzy się okazja by tam wrócić :)
+.</p>
+								    <div class="author-wrap">
+									    <div class="author-picture"><img class="cover" src="assets/images/mateusz_chatka_na_wynajem_szczawnica.jpg" alt="Chatka w Szczawnicy na wynajem" /></div>
+										<div>
+										    <div class="author-country">Mateusz</div>
+										</div>
+									</div>
+								</div>
+							  
+							    <!-- Testimonials item -->
+                                <div class="testimonials-item swiper-slide">
+								    <h4 class="title title--h4">Wspaniale!</h4>
+									<p class="testimonials-item__caption">— Malownicze widoki, otoczenie chaty, jakość wykonania, wyposażenie domu, spokój i cisza i fantastyczni właściciele, którym zależy na tym żeby zapewnić dosłownie wszystko :) na pewno wrócimy w to cudowne miejsce.
+
+</p>
+								    <div class="author-wrap">
+									    <div class="author-picture"><img class="cover" src="assets/images/grzegorz_domki_szczawnica.jpg" alt="Domki całoroczne Szczawnica" /></div>
+										<div>
+										    <div class="author-country">Grzegorz</div>
+										</div>
+									</div>
+								</div>
+							 
+                            </div>
+							
+							<!-- Pagination  -->
+                            <div class="swiper-pagination"></div>
+						</div>
+						<!-- /Carousel -->
+					</div>
+				</div>
+			</div>
+        </section>
+		
+	    <!-- Section CTA -->
+	    <section class="container">
+	        <div class="row cta-box cta-negative js-scroll-show">
+			    <div class="col-12 col-lg-7">
+			        <h2 class="title title--h2">Chatka na górze Niterbarg zaprasza!</h2>
+				    <p class="paragraph">Zarezerwuj domek już teraz i rozpocznij niesamowitą przygodę w Szczawnicy.</p>
+				</div>
+				<div class="col-12 col-lg-5 text-lg-right">
+				    <a href="dom_szczawnica.html" class="btn btn__large btn--white">Rezerwacja <i class="btn-icon-right icon-arrow-special"></i></a>
+				</div>
+			</div>
+	    </section>
+
+
+
+
+
+
+
+
+<section class="container section section-first">
+		    <div class="row">
+			    <div class="col-12">
+				    <h1 class="title title--h1 js-lines">Kontakt.</h1>
+				</div>
+			</div>
+			<div class="row">
+                <div class="col-12 col-md-6 col-lg-4 col-contact js-scroll-show">
+				    <h4 class="title title--h4">Addres</h4>
+					<p class="paragraph">ul. Niterbarg 5,<br>34-460 Szczawnica</p>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 col-contact js-scroll-show">
+				    <h4 class="title title--h4">Dane kontaktowe</h4>
+					<p class="paragraph">domek@niterbarg5.pl<br><a href="tel:+48503128008"><strong>503 128 008</strong></a></p>
+				</div>
+				
+
+
+				<div class="col-12 col-md-6 col-lg-4 col-contact js-scroll-show">
+				    <h4 class="title title--h4">Dojazd tylko autem terenowym</h4>
+					<p class="paragraph">Samochód osobowy można zostawić na parkingu prywatnym i przejechać ostatni kilometrowy odcinek samochodem terenowym właściciela.
+
+</p>
+				</div>
+
+
+			</div>
+		</section>
+		
+
+
+
+
+	    <!-- Map -->
+		<div class="map-bottom" id="map"></div>
+
+
+
+	</main>
+	<!-- /Content -->
+	
+	<!-- Footer -->
+	<footer class="footer">
+	    <div class="footer__left">
+			<ul class="footer__info">
+			    <li>© 2021 - Domek Szczawnica Niterbarg 5</li>
+			    <li><a href="regulamin.html">Regulamin</a></li>
+				<li><a href="polityka-prywatnosci.html">Polityka prywatności</a></li>
+			</ul>
+		</div>
+		<ul class="footer__social">
+		    <li><a href="https://www.facebook.com/niterbarg5" class="social-link"><i class="icon-facebook-alt"></i></a></li>
+		    <li><a href="#" class="social-link"><i class="icon-instagram"></i></a></li>
+		</ul>
+	</footer>
+
+    <!-- Lightbox hero video -->
+    <div class="lightbox-backdrop">
+	    <div class="close-popup icon-x"></div>
+        <div class="lightbox-content">
+            <div class="video-foreground">
+			    <div class="youtube-popup" data-yt-url="https://www.youtube.com/embed/Id6dw-k-LPk?autoplay=1&"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button Live Chat -->
+
+
+
+
+
+
+
+
+    <!-- Messenger Wtyczka czatu Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Wtyczka czatu code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "101607982195962");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+
+
+
+
+	<!-- JavaScripts -->
+	<script src="assets/js/jquery-3.4.1.min.js" ></script>
+	<script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/common.min.js"></script>
+
+    <!-- Mapbox init -->
+	<script src="assets/js/mapbox.init.js"></script>
+
+
+</body>
+</html>
